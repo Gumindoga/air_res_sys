@@ -26,40 +26,42 @@ Partial Class frmPassenger
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtDeparture = New System.Windows.Forms.TextBox()
+        Me.txtDate = New System.Windows.Forms.TextBox()
+        Me.txtSeat = New System.Windows.Forms.TextBox()
+        Me.txtFlight = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtArrival = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.txtContact = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtGender = New System.Windows.Forms.TextBox()
+        Me.txtAge = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtPassenger = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtFullName = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button5.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(200, 440)
+        Me.Button5.Location = New System.Drawing.Point(622, 81)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(94, 37)
         Me.Button5.TabIndex = 18
@@ -70,7 +72,7 @@ Partial Class frmPassenger
         '
         Me.Button4.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button4.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.Location = New System.Drawing.Point(344, 440)
+        Me.Button4.Location = New System.Drawing.Point(622, 135)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(94, 37)
         Me.Button4.TabIndex = 17
@@ -81,7 +83,7 @@ Partial Class frmPassenger
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button3.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(498, 440)
+        Me.Button3.Location = New System.Drawing.Point(622, 191)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(94, 37)
         Me.Button3.TabIndex = 16
@@ -92,71 +94,71 @@ Partial Class frmPassenger
         '
         Me.Button2.BackColor = System.Drawing.Color.Red
         Me.Button2.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(644, 440)
+        Me.Button2.Location = New System.Drawing.Point(622, 254)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 37)
         Me.Button2.TabIndex = 15
         Me.Button2.Text = "Close"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnSave
         '
-        Me.Button6.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button6.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button6.Location = New System.Drawing.Point(56, 440)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(94, 37)
-        Me.Button6.TabIndex = 14
-        Me.Button6.Text = "Save"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnSave.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnSave.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnSave.Location = New System.Drawing.Point(622, 34)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(94, 37)
+        Me.btnSave.TabIndex = 14
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
+        Me.GroupBox2.Controls.Add(Me.txtDeparture)
+        Me.GroupBox2.Controls.Add(Me.txtDate)
+        Me.GroupBox2.Controls.Add(Me.txtSeat)
+        Me.GroupBox2.Controls.Add(Me.txtFlight)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label12)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.txtArrival)
         Me.GroupBox2.Font = New System.Drawing.Font("Sequel", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox2.Location = New System.Drawing.Point(56, 127)
+        Me.GroupBox2.Location = New System.Drawing.Point(23, 23)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(583, 123)
         Me.GroupBox2.TabIndex = 20
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Flight Details"
         '
-        'TextBox7
+        'txtDeparture
         '
-        Me.TextBox7.Location = New System.Drawing.Point(403, 55)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(170, 25)
-        Me.TextBox7.TabIndex = 9
+        Me.txtDeparture.Location = New System.Drawing.Point(403, 55)
+        Me.txtDeparture.Name = "txtDeparture"
+        Me.txtDeparture.Size = New System.Drawing.Size(170, 25)
+        Me.txtDeparture.TabIndex = 9
         '
-        'TextBox5
+        'txtDate
         '
-        Me.TextBox5.Location = New System.Drawing.Point(113, 84)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(166, 25)
-        Me.TextBox5.TabIndex = 7
+        Me.txtDate.Location = New System.Drawing.Point(113, 84)
+        Me.txtDate.Name = "txtDate"
+        Me.txtDate.Size = New System.Drawing.Size(166, 25)
+        Me.txtDate.TabIndex = 7
         '
-        'TextBox4
+        'txtSeat
         '
-        Me.TextBox4.Location = New System.Drawing.Point(113, 56)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(166, 25)
-        Me.TextBox4.TabIndex = 6
+        Me.txtSeat.Location = New System.Drawing.Point(113, 56)
+        Me.txtSeat.Name = "txtSeat"
+        Me.txtSeat.Size = New System.Drawing.Size(166, 25)
+        Me.txtSeat.TabIndex = 6
         '
-        'TextBox3
+        'txtFlight
         '
-        Me.TextBox3.Location = New System.Drawing.Point(113, 28)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(166, 25)
-        Me.TextBox3.TabIndex = 5
+        Me.txtFlight.Location = New System.Drawing.Point(113, 28)
+        Me.txtFlight.Name = "txtFlight"
+        Me.txtFlight.Size = New System.Drawing.Size(166, 25)
+        Me.txtFlight.TabIndex = 5
         '
         'Label8
         '
@@ -208,62 +210,79 @@ Partial Class frmPassenger
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Flight"
         '
-        'TextBox2
+        'txtArrival
         '
-        Me.TextBox2.Location = New System.Drawing.Point(403, 27)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(170, 25)
-        Me.TextBox2.TabIndex = 2
+        Me.txtArrival.Location = New System.Drawing.Point(403, 27)
+        Me.txtArrival.Name = "txtArrival"
+        Me.txtArrival.Size = New System.Drawing.Size(170, 25)
+        Me.txtArrival.TabIndex = 2
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
+        Me.GroupBox1.Controls.Add(Me.txtContact)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox8)
-        Me.GroupBox1.Controls.Add(Me.TextBox9)
+        Me.GroupBox1.Controls.Add(Me.txtGender)
+        Me.GroupBox1.Controls.Add(Me.txtAge)
+        Me.GroupBox1.Controls.Add(Me.txtAddress)
+        Me.GroupBox1.Controls.Add(Me.txtPassenger)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TextBox10)
+        Me.GroupBox1.Controls.Add(Me.txtFullName)
         Me.GroupBox1.Font = New System.Drawing.Font("Sequel", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.GroupBox1.Location = New System.Drawing.Point(56, 268)
+        Me.GroupBox1.Location = New System.Drawing.Point(23, 164)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(583, 127)
         Me.GroupBox1.TabIndex = 21
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Flight Details"
+        Me.GroupBox1.Text = "Passenger Details"
         '
-        'TextBox1
+        'txtContact
         '
-        Me.TextBox1.Location = New System.Drawing.Point(403, 65)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(170, 25)
-        Me.TextBox1.TabIndex = 9
+        Me.txtContact.Location = New System.Drawing.Point(403, 93)
+        Me.txtContact.Name = "txtContact"
+        Me.txtContact.Size = New System.Drawing.Size(170, 25)
+        Me.txtContact.TabIndex = 11
         '
-        'TextBox6
+        'Label6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(117, 91)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(162, 25)
-        Me.TextBox6.TabIndex = 7
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Sequel", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.Location = New System.Drawing.Point(321, 96)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(61, 18)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Contact"
         '
-        'TextBox8
+        'txtGender
         '
-        Me.TextBox8.Location = New System.Drawing.Point(117, 63)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(162, 25)
-        Me.TextBox8.TabIndex = 6
+        Me.txtGender.Location = New System.Drawing.Point(403, 65)
+        Me.txtGender.Name = "txtGender"
+        Me.txtGender.Size = New System.Drawing.Size(170, 25)
+        Me.txtGender.TabIndex = 9
         '
-        'TextBox9
+        'txtAge
         '
-        Me.TextBox9.Location = New System.Drawing.Point(117, 35)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(162, 25)
-        Me.TextBox9.TabIndex = 5
+        Me.txtAge.Location = New System.Drawing.Point(117, 91)
+        Me.txtAge.Name = "txtAge"
+        Me.txtAge.Size = New System.Drawing.Size(162, 25)
+        Me.txtAge.TabIndex = 7
+        '
+        'txtAddress
+        '
+        Me.txtAddress.Location = New System.Drawing.Point(117, 63)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(162, 25)
+        Me.txtAddress.TabIndex = 6
+        '
+        'txtPassenger
+        '
+        Me.txtPassenger.Location = New System.Drawing.Point(117, 35)
+        Me.txtPassenger.Name = "txtPassenger"
+        Me.txtPassenger.Size = New System.Drawing.Size(162, 25)
+        Me.txtPassenger.TabIndex = 5
         '
         'Label1
         '
@@ -315,48 +334,43 @@ Partial Class frmPassenger
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Passenger ID"
         '
-        'TextBox10
+        'txtFullName
         '
-        Me.TextBox10.Location = New System.Drawing.Point(403, 37)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(170, 25)
-        Me.TextBox10.TabIndex = 2
+        Me.txtFullName.Location = New System.Drawing.Point(403, 37)
+        Me.txtFullName.Name = "txtFullName"
+        Me.txtFullName.Size = New System.Drawing.Size(170, 25)
+        Me.txtFullName.TabIndex = 2
         '
-        'TextBox11
+        'DataGridView1
         '
-        Me.TextBox11.Location = New System.Drawing.Point(403, 93)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(170, 25)
-        Me.TextBox11.TabIndex = 11
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Sequel", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(321, 96)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 18)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Contact"
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(23, 328)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 29
+        Me.DataGridView1.Size = New System.Drawing.Size(693, 212)
+        Me.DataGridView1.TabIndex = 22
         '
         'frmPassenger
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(998, 575)
+        Me.ClientSize = New System.Drawing.Size(728, 575)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.btnSave)
         Me.Name = "frmPassenger"
         Me.Text = "Passenger Form"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -364,29 +378,30 @@ Partial Class frmPassenger
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents btnSave As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txtArrival As TextBox
+    Friend WithEvents txtDate As TextBox
+    Friend WithEvents txtSeat As TextBox
+    Friend WithEvents txtFlight As TextBox
+    Friend WithEvents txtDeparture As TextBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents txtContact As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents txtGender As TextBox
+    Friend WithEvents txtAge As TextBox
+    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtPassenger As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents txtFullName As TextBox
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

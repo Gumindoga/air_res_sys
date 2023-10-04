@@ -18,6 +18,11 @@ Public Class frmPlane
         da.Fill(dt)
         DataGridView1.DataSource = dt
         conn.Close()
+
+        DataGridView1.Columns(0).Width = 177.5
+        DataGridView1.Columns(1).Width = 177.5
+        DataGridView1.Columns(2).Width = 177.5
+
     End Sub
     Private Sub frmPlane_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys.accdb"
