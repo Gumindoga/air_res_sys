@@ -14,8 +14,8 @@
         Me.Hide()
     End Sub
 
-    Private Sub StaffFormToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StaffFormToolStripMenuItem.Click
-        frmStaff.Show()
-        Me.Hide()
+    Private Sub EXITToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EXITToolStripMenuItem.Click
+        Me.Close()
+        frmLogin.Show()
     End Sub
 End Class

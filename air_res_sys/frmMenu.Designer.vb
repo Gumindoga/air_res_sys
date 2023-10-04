@@ -38,6 +38,7 @@ Partial Class frmMenu
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangePasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EXITToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -135,7 +136,7 @@ Partial Class frmMenu
         '
         'SettingsToolStripMenuItem
         '
-        Me.SettingsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangePasswordToolStripMenuItem, Me.AddUserToolStripMenuItem})
+        Me.SettingsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangePasswordToolStripMenuItem, Me.AddUserToolStripMenuItem, Me.EXITToolStripMenuItem})
         Me.SettingsToolStripMenuItem.Font = New System.Drawing.Font("Sequel", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
         Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(124, 36)
@@ -154,6 +155,12 @@ Partial Class frmMenu
         Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
         Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(309, 36)
         Me.AddUserToolStripMenuItem.Text = "Add User"
+        '
+        'EXITToolStripMenuItem
+        '
+        Me.EXITToolStripMenuItem.Name = "EXITToolStripMenuItem"
+        Me.EXITToolStripMenuItem.Size = New System.Drawing.Size(309, 36)
+        Me.EXITToolStripMenuItem.Text = "EXIT"
         '
         'frmMenu
         '
@@ -188,4 +195,5 @@ Partial Class frmMenu
     Friend WithEvents CalendarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ChangePasswordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddUserToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EXITToolStripMenuItem As ToolStripMenuItem
 End Class

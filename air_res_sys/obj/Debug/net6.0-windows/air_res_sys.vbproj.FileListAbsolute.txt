@@ -4,7 +4,6 @@ C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys\obj\Debug\net6.0-windows\
 C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys\obj\Debug\net6.0-windows\air_res_sys.frmMenu.resources
 C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys\obj\Debug\net6.0-windows\air_res_sys.frmPassenger.resources
 C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys\obj\Debug\net6.0-windows\air_res_sys.frmPlane.resources
-C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys\obj\Debug\net6.0-windows\air_res_sys.frmStaff.resources
 C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys\obj\Debug\net6.0-windows\air_res_sys.Resources.resources
 C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys\obj\Debug\net6.0-windows\air_res_sys.vbproj.GenerateResource.cache
 C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys\obj\Debug\net6.0-windows\air_res_sys.GeneratedMSBuildEditorConfig.editorconfig
