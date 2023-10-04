@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "DAEDMo8x9sjo8WFf2rlctjgIdypUhjk5jh5HfzQ6Ol3y5H4F3nbKQy7ZfGqkT7FU9Uroue6Id2fp3NeEmmrmjQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dell Latitude\\Code\\VB\\air_res_sys\\air_res_sys\\air_res_sys.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell Latitude\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0-rc.1.23419.4\\system.configuration.configurationmanager.8.0.0-rc.1.23419.4.nupkg.sha512",
+    "C:\\Users\\Dell Latitude\\.nuget\\packages\\system.data.oledb\\8.0.0-rc.1.23419.4\\system.data.oledb.8.0.0-rc.1.23419.4.nupkg.sha512",
+    "C:\\Users\\Dell Latitude\\.nuget\\packages\\system.diagnostics.performancecounter\\8.0.0-rc.1.23419.4\\system.diagnostics.performancecounter.8.0.0-rc.1.23419.4.nupkg.sha512",
+    "C:\\Users\\Dell Latitude\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0-rc.1.23419.4\\system.security.cryptography.protecteddata.8.0.0-rc.1.23419.4.nupkg.sha512"
+  ],
+  "logs": []
+}
