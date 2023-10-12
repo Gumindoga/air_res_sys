@@ -112,6 +112,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmLogin"
         Me.Text = "Login Form"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

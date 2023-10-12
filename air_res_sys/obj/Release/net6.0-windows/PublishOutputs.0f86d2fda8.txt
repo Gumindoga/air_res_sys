@@ -1,0 +1,11 @@
+C:\Users\Dell Latitude\Downloads\air_res_sys.exe
+C:\Users\Dell Latitude\Downloads\air_res_sys.dll
+C:\Users\Dell Latitude\Downloads\air_res_sys.deps.json
+C:\Users\Dell Latitude\Downloads\air_res_sys.runtimeconfig.json
+C:\Users\Dell Latitude\Downloads\air_res_sys.pdb
+C:\Users\Dell Latitude\Downloads\System.Configuration.ConfigurationManager.dll
+C:\Users\Dell Latitude\Downloads\System.Data.OleDb.dll
+C:\Users\Dell Latitude\Downloads\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Dell Latitude\Downloads\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Dell Latitude\Downloads\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\Dell Latitude\Downloads\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll

@@ -1,0 +1,112 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "air_res_sys/1.0.0": {
+        "dependencies": {
+          "System.Data.OleDb": "8.0.0-rc.1.23419.4"
+        },
+        "runtime": {
+          "air_res_sys.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/8.0.0-rc.1.23419.4": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "8.0.0-rc.1.23419.4"
+        },
+        "runtime": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        }
+      },
+      "System.Data.OleDb/8.0.0-rc.1.23419.4": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0-rc.1.23419.4",
+          "System.Diagnostics.PerformanceCounter": "8.0.0-rc.1.23419.4"
+        },
+        "runtime": {
+          "lib/net6.0/System.Data.OleDb.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Data.OleDb.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/8.0.0-rc.1.23419.4": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "8.0.0-rc.1.23419.4"
+        },
+        "runtime": {
+          "lib/net6.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0-rc.1.23419.4": {
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "air_res_sys/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration.ConfigurationManager/8.0.0-rc.1.23419.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HMpm9//lKNRtlsFkd6UnbwADdTlxdKvf/cPG1XOYdZpPmzGNPGLiFHORsCL41ntzTlg8CQU6952BkVf/qm3ZSQ==",
+      "path": "system.configuration.configurationmanager/8.0.0-rc.1.23419.4",
+      "hashPath": "system.configuration.configurationmanager.8.0.0-rc.1.23419.4.nupkg.sha512"
+    },
+    "System.Data.OleDb/8.0.0-rc.1.23419.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6ogr15UE2rQqiL/MzzqVoxR46NtP5/ALjr4RkU6RuwEhs1EYt8l5Ra1CGCBYv3ASa72VHcgMioAzWjR8qgDp5w==",
+      "path": "system.data.oledb/8.0.0-rc.1.23419.4",
+      "hashPath": "system.data.oledb.8.0.0-rc.1.23419.4.nupkg.sha512"
+    },
+    "System.Diagnostics.PerformanceCounter/8.0.0-rc.1.23419.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1lxEk+pWqQ20d1qca165QzqbE2HkzKKCW96s8YeyTN/j4apkeVc0m4EStip1tjq2Q13t1wwHR0HwNY9/YMldYg==",
+      "path": "system.diagnostics.performancecounter/8.0.0-rc.1.23419.4",
+      "hashPath": "system.diagnostics.performancecounter.8.0.0-rc.1.23419.4.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0-rc.1.23419.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p7UlSyRHRZ5EloVOSD8D35qbcfdy2nTvez3IuWGS0Jh9Jz08idwembfFCJNPNVi5DJ92ffRM3DgWZdwB67ZNCg==",
+      "path": "system.security.cryptography.protecteddata/8.0.0-rc.1.23419.4",
+      "hashPath": "system.security.cryptography.protecteddata.8.0.0-rc.1.23419.4.nupkg.sha512"
+    }
+  }
+}
