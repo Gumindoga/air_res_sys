@@ -23,18 +23,28 @@ Public Class frmPassenger
 
     End Sub
     Private Sub frmPassenger_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell Latitude\Code\VB\air_res_sys\air_res_sys.accdb"
+        Dim dataPath As String
+
+        dataPath = System.Windows.Forms.Application.StartupPath
+
+        dataPath = System.IO.Path.Combine(dataPath, "air_res_sys.accdb")
+
+        conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dataPath
         viewer()
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        conn.Open()
-        cmd = conn.CreateCommand()
-        cmd.CommandType = CommandType.Text
-        cmd.CommandText = "insert into tblPassenger(PassengerID,Address,Age,FullName,Gender,Contact,Flight,ReservedSeat,FlightDate,ArrivalTime,DepartureTime)values('" + txtPassenger.Text + "', '" + txtAddress.Text + "', '" + txtAge.Text + "', '" + txtFullName.Text + "', '" + txtGender.Text + "', '" + txtContact.Text + "', '" + txtFlight.Text + "', '" + txtSeat.Text + "', '" + txtDate.Text + "', '" + txtArrival.Text + "', '" + txtDeparture.Text + "')"
-        cmd.ExecuteNonQuery()
-        conn.Close()
-        MessageBox.Show("Record Saved", "Air Res Sys")
+        Try
+            conn.Open()
+            cmd = conn.CreateCommand()
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = "insert into tblPassenger(PassengerID,Address,Age,FullName,Gender,Contact,FlightID,ReservedSeat,FlightDate,ArrivalTime,DepartureTime)values('" + txtPassenger.Text + "', '" + txtAddress.Text + "', '" + txtAge.Text + "', '" + txtFullName.Text + "', '" + txtGender.Text + "', '" + txtContact.Text + "', '" + txtFlight.Text + "', '" + txtSeat.Text + "', '" + txtDate.Text + "', '" + txtArrival.Text + "', '" + txtDeparture.Text + "')"
+            cmd.ExecuteNonQuery()
+            conn.Close()
+            MessageBox.Show("Record Saved", "Air Res Sys")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Air Res Sys", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
 
     End Sub
 

@@ -37,8 +37,8 @@ Partial Class frmFlight
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtArrival = New System.Windows.Forms.TextBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.btnView = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
@@ -190,27 +190,27 @@ Partial Class frmFlight
         Me.txtArrival.Size = New System.Drawing.Size(170, 25)
         Me.txtArrival.TabIndex = 2
         '
-        'Button5
+        'btnUpdate
         '
-        Me.Button5.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button5.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(211, 401)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(94, 37)
-        Me.Button5.TabIndex = 25
-        Me.Button5.Text = "Edit"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnUpdate.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnUpdate.Location = New System.Drawing.Point(211, 401)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(94, 37)
+        Me.btnUpdate.TabIndex = 25
+        Me.btnUpdate.Text = "UPDATE"
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnView
         '
-        Me.Button4.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button4.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.Location = New System.Drawing.Point(355, 401)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(94, 37)
-        Me.Button4.TabIndex = 24
-        Me.Button4.Text = "Clear"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnView.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnView.Font = New System.Drawing.Font("Sequel", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnView.Location = New System.Drawing.Point(355, 401)
+        Me.btnView.Name = "btnView"
+        Me.btnView.Size = New System.Drawing.Size(94, 37)
+        Me.btnView.TabIndex = 24
+        Me.btnView.Text = "VIEW"
+        Me.btnView.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -262,8 +262,8 @@ Partial Class frmFlight
         Me.ClientSize = New System.Drawing.Size(806, 450)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.btnView)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnSave)
@@ -291,8 +291,8 @@ Partial Class frmFlight
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents txtArrival As TextBox
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents btnView As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents btnSave As Button
